@@ -46,6 +46,9 @@ fonts = [
     "Mr Bedfort"
 ];
 
+fontSizes = [30, 40, 30, 50, 40, 40, 40, 40, 40,
+    50, 40, 40, 50, 50, 40, 40, 40, 50, 40, 50, 40];
+
 var red = "#F44336";
 var green = "#8BC34A";
 var blue = "#03A9F4";
@@ -64,8 +67,10 @@ function triggerFadeAnim() {
 function getRandomFromArray(array) {
     document.getElementById("compliment").innerHTML =
         array[Math.floor(Math.random() * array.length)];
+        fontIndex = Math.floor(Math.random() * fonts.length);
     document.getElementById("compliment").style.fontFamily =
-        fonts[Math.floor(Math.random() * fonts.length)] + ", cursive";
+        fonts[fontIndex] + ", cursive";
+        document.getElementById("compliment").style.fontSize = fontSizes[fontIndex];
 }
 
 function triggerButtonClick(array, col) {
