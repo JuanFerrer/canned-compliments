@@ -1,0 +1,106 @@
+body {
+    background-color: #7E57C2;
+    overflow: hidden;
+    min-width: 300px;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    transition: all 1s;
+}
+
+#container {
+    height: 100%;
+    width: 100%;
+    align-self: center;
+}
+
+#compliment-container {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+}
+
+#compliment {
+    align-self: center;
+    text-align: center;
+    font-size: 25px;
+    transition: all 1s;
+    font-family: 'Gloria Hallelujah', cursive;
+    /**/
+}
+
+@keyframes fade-animation {
+    0% {
+        opacity: 100;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+
+.fade {
+    animation-name: fade-animation;
+    animation-duration: 1s;
+}
+
+#button-container-wrap {
+    width: 100%;
+}
+
+#button-container {
+    width: 60%;
+    margin: auto;
+}
+
+button {
+    width: 24.5%;
+    height: 25px;
+    border: none;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+button:focus {
+    outline: 0 !important;
+    border-top: solid 1px #181818;
+    border-bottom: solid 1px #181818;
+}
+
+button:active {}
+
+
+/* Button hover colours: Remove 10 SATURATION and 10 LIGHTNESS, keeping HUE the same */
+
+#romance-button {
+    background-color: #F44336;
+}
+
+#romance-button:hover {
+    background-color: #dc2618;
+}
+
+#friend-button {
+    background-color: #7E57C2;
+}
+
+#friend-button:hover {
+    background-color: #67489d;
+}
+
+#food-button {
+    background-color: #8BC34A;
+}
+
+#food-button:hover {
+    background-color: #719a42;
+}
+
+#house-button {
+    background-color: #03A9F4;
+}
+
+#house-button:hover {
+    background-color: #0c80b6;
+}
