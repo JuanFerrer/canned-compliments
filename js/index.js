@@ -46,8 +46,12 @@ fonts = [
     "Mr Bedfort"
 ];
 
-fontSizes = [30, 40, 30, 50, 40, 40, 40, 40, 40,
-    50, 40, 40, 50, 50, 40, 40, 40, 50, 40, 50, 40];
+var bf = 10;
+var mf = 10;
+var sf = 5;
+
+fontSizes = [sf, bf, sf, bf, bf, bf, bf, bf, bf,
+    mf, mf, mf, mf, mf, mf, mf, mf, mf, bf, bf, bf];
 
 var red = "#F44336";
 var green = "#8BC34A";
@@ -70,7 +74,7 @@ function getRandomFromArray(array) {
         fontIndex = Math.floor(Math.random() * fonts.length);
     document.getElementById("compliment").style.fontFamily =
         fonts[fontIndex] + ", cursive";
-        document.getElementById("compliment").style.fontSize = fontSizes[fontIndex];
+        document.getElementById("compliment").style.fontSize = fontSizes[fontIndex] + "vh";
 }
 
 function triggerButtonClick(array, col) {

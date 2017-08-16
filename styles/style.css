@@ -21,15 +21,15 @@ body {
 #compliment-container {
     display: flex;
     justify-content: center;
-    height: 200px;
+    height: 60vh;
 }
 
 #compliment {
     align-self: center;
     text-align: center;
-    transition: all 1s;
+    /*transition: all 1s;*/
     font-family: 'Gloria Hallelujah', cursive;
-    font-size: 40px;
+    font-size: 5vh;
     /**/
 }
 
@@ -53,6 +53,8 @@ body {
 #button-container-wrap {
     min-width: 300px;
     width: 100%;
+    position: absolute;
+    bottom: 10vh;
 }
 
 #button-container {
