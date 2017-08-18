@@ -16,6 +16,7 @@ body {
     min-width: 200px;
     min-height: 200px;
     width: 100%;
+    height: 80%;
 }
 
 #compliment-container {
@@ -55,7 +56,7 @@ body {
     width: 100%;
     position: absolute;
     bottom: 2vh;
-    height: 15vh;
+    height: 10vh;
 }
 
 #button-container {
