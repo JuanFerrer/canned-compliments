@@ -17,16 +17,16 @@ body {
 
 #outer-container {
 	width: 100vw;
+	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
 }
 
 #compliment-container {
+	height: 60vh;
 	display: flex;
 	justify-content: center;
-	height: 60vh;
 }
 
 #compliment {
@@ -66,10 +66,10 @@ body {
 }
 
 button {
-	margin: 0;
-	font-size: 25px;
 	width: 49.7%;
 	height: 40px;
+	margin: 0;
+	font-size: 25px;
 	border: none;
 	font-family: 'Fjalla One', sans-serif;
 	transition: background-color 0.3s ease-in-out;
