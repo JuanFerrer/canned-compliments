@@ -1,107 +1,118 @@
+:root {
+	--romance-color: #F44336;
+	--romance-hover-color: #DC2618;
+	--friend-color: #7E57C2;
+	--friend-hover-color: #67489D;
+	--food-color: #8BC34A;
+	--food-hover-color: #719A42;
+	--house-color: #03A9F4;
+	--house-hover-color: #0C80b6;
+}
+
 body {
-    overflow: hidden;
-    background-color: #7E57C2;
-    transition: all 1s;
+	overflow: hidden;
+	background-color: var(--friend-color);
+	transition: all 1s;
 }
 
 #outer-container {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
 }
 
 #compliment-container {
-    display: flex;
-    justify-content: center;
-    height: 60vh;
+	display: flex;
+	justify-content: center;
+	height: 60vh;
 }
 
 #compliment {
-    align-self: center;
-    text-align: center;
-    /*transition: all 1s;*/
-    font-family: 'Gloria Hallelujah', cursive;
-    font-size: 5vh;
-    /**/
+	align-self: center;
+	text-align: center;
+	/*transition: all 1s;*/
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 5vh;
+	/**/
 }
 
 @keyframes fade-animation {
-    0% {
-        opacity: 100;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 100;
-    }
+	0% {
+		opacity: 100;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 100;
+	}
 }
 
 .fade {
-    animation-name: fade-animation;
-    animation-duration: 1s;
+	animation-name: fade-animation;
+	animation-duration: 1s;
 }
 
 #button-container {
-    width: 70%;
-    min-width: 300px;
-    height: 10vh;
-    min-height: 100px;
-    margin: auto;
-    position: absolute;
-    bottom: 2vh;
+	width: 70%;
+	min-width: 300px;
+	height: 10vh;
+	min-height: 100px;
+	margin: auto;
+	position: absolute;
+	bottom: 2vh;
 }
 
 button {
-    margin: 0;
-    font-size: 25px;
-    width: 49.7%;
-    height: 40px;
-    border: none;
-    font-family: 'Fjalla One', sans-serif;
+	margin: 0;
+	font-size: 25px;
+	width: 49.7%;
+	height: 40px;
+	border: none;
+	font-family: 'Fjalla One', sans-serif;
+	transition: background-color 0.3s ease-in-out;
 }
 
 button:focus {
-    outline: 0 !important;
-    border-top: solid 1px #181818;
-    border-bottom: solid 1px #181818;
+	outline: 0 !important;
+	border-top: solid 1px #181818;
+	border-bottom: solid 1px #181818;
 }
 
 /*button:active {}*/
 
-
 /* Button hover colours: Remove 10 SATURATION and 10 LIGHTNESS, maintain HUE */
 
 #romance-button {
-    background-color: #F44336;
+	background-color: var(--romance-color);
 }
 
 #romance-button:hover {
-    background-color: #dc2618;
+	background-color: var(--romance-hover-color);
 }
 
 #friend-button {
-    background-color: #7E57C2;
+	background-color: var(--friend-color);
 }
 
 #friend-button:hover {
-    background-color: #67489d;
+	background-color: var(--friend-hover-color);
 }
 
 #food-button {
-    background-color: #8BC34A;
+	background-color: var(--food-color);
 }
 
 #food-button:hover {
-    background-color: #719a42;
+	background-color: var(--food-hover-color);
 }
 
 #house-button {
-    background-color: #03A9F4;
+	background-color: var(--house-color);
 }
 
 #house-button:hover {
-    background-color: #0c80b6;
+	background-color: var(--house-hover-color);
 }
